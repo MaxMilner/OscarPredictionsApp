@@ -3,25 +3,25 @@ import hideDiv from "./hideAndShow"
 
 function loginUser() {
   sessionStorage.clear()
-    let email = document.querySelector("#login").value
-      userAPIfunctions.getUser(email)
+    let email = document.querySelector("#login")
+      userAPIfunctions.getUser(email.value)
       .then((user) => {
        let validated = validatePassword(user)
-        if(validated) {
-          email = document.querySelector("#login")
+        if (validated) {
           sessionStorage.setItem("user_id", user.id)
           sessionStorage.setItem("email", email.value)
           hideDiv.hideLoginDiv()
           hideDiv.hideNavBarDiv()
-            alert("welcome")
+            alert("YO DOG CHILI CHEESE")
         } else {
-            alert("wrong password")
+            alert("iNcOrReCt PaSsWoRd")
           }
-       })
+      })
 }
 
 function validatePassword(user) {
-  const passwordValue = document.querySelector("#password")
+  const passwordValue = document.querySelector("#passwordLogin")
+    console.log(passwordValue.value)
     if (user.password === passwordValue.value) {
       return true
     } else {

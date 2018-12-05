@@ -10,7 +10,7 @@ hideLoginDiv() {
     navBar.classList.toggle("hide")
   },
 
-  LogOut() {
+  logOut() {
     sessionStorage.clear()
     document.querySelector(".domEntry").innerHTML = ""
       const login = document.getElementById("signUpBox")

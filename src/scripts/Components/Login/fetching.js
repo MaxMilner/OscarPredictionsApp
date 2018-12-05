@@ -1,4 +1,4 @@
-const userAPIfunctions={
+const userAPIfunctions = {
   getUsers(){
       return fetch("http://localhost:8088/users")
       .then(users => users.json())
@@ -9,13 +9,13 @@ const userAPIfunctions={
       .then(user => user.json())
       .then(parsedUser => parsedUser[0])
   },
-  postUser(obj){
-      return fetch("http://localhost:8088/users",{
+  postUser(user){
+      return fetch("http://localhost:8088/users?users" ,{
       method:"POST",
       headers: {
           "Content-Type": "application/json"
       },
-      body: JSON.stringify(obj)
+      body: JSON.stringify(user)
   })}
 }
 

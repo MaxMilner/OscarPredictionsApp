@@ -36,6 +36,13 @@ li {
   align-content: center;
 }
 
+/* Styling for input errors */
+.wrong-input {
+  border: 1px solid red;
+  animation: shake 0.5s;
+  animation-iteration-count: 2
+}
+
 /* Centering placeholder text */
 ::-webkit-input-placeholder {
   text-align: center;
