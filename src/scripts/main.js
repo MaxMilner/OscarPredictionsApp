@@ -1,8 +1,19 @@
-import sayHello from "./hello"
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
+import signUser from "./Components/Login/signUser"
+import loginUser from "./Components/Login/loginUser"
+import hideDiv from "./Components/Login/classChanger";
 
-sayHello()
-sayGoodbye()
+let existingUserButton = document.getElementById("loginButton")
+let newUsers = document.getElementById("signUpButton")
+const logout = document.querySelector("#logOutNav")
 
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
+  logout.addEventListener("click", () => {
+    hideDiv.LogOut()
+})
+
+  newUsers.addEventListener("click", () => {
+    signUser()
+})
+
+  existingUserButton.addEventListener("click", () => {
+    loginUser()
+})

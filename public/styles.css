@@ -1,0 +1,46 @@
+.login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+header {
+  color: gold;
+  background-color: crimson;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+body {
+  background-color: black;
+}
+
+input {
+  border-radius: 2px;
+  padding: 2px;
+}
+
+li {
+  color: gold;
+}
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* Centering placeholder text */
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+footer {
+  background-color: crimson;
+}
