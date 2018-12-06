@@ -1,3 +1,14 @@
+header {
+  color: gold;
+  background-color: crimson;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+#header {
+  background: url(curtains.jpeg) center no-repeat;
+}
+
 .login {
   display: flex;
   flex-direction: row;
@@ -7,24 +18,13 @@
   align-content: stretch;
 }
 
-header {
-  color: gold;
-  background-color: crimson;
-  padding: 15px;
-  border-radius: 2px;
-}
-
-body {
-  background-color: black;
-}
-
 input {
   border-radius: 2px;
   padding: 2px;
 }
 
-li {
-  color: gold;
+body {
+  background-color: black;
 }
 
 .signUp {
@@ -48,6 +48,12 @@ li {
   text-align: center;
 }
 
-footer {
-  background-color: crimson;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: url(curtains.jpeg);
+  color: gold;
+  text-align: center;
 }

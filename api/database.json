@@ -11,6 +11,12 @@
       "email": "1",
       "password": "1",
       "id": 1
+    },
+    {
+      "username": "2",
+      "email": "2",
+      "password": "2",
+      "id": 2
     }
   ]
 }

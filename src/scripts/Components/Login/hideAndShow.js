@@ -1,22 +1,22 @@
 const hideDiv = {
 
-hideLoginDiv() {
+  hideLoginDiv() {
     const login = document.getElementById("loginBox")
     login.classList.toggle("hide")
   },
 
-  hideNavBarDiv() {
-    const navBar = document.getElementById("navBar")
-    navBar.classList.toggle("hide")
+  hideSignUpDiv() {
+    const signUp = document.getElementById("signUpBox")
+    signUp.classList.toggle("hide")
   },
 
-  logOut() {
+logout() {
     sessionStorage.clear()
     document.querySelector(".domEntry").innerHTML = ""
-      const login = document.getElementById("signUpBox")
+      const login = document.getElementById("loginBox")
         login.classList.toggle("hide")
-      const navBar = document.getElementById("navBar")
-        navBar.classList.toggle("hide")
+      const signUp = document.getElementById("signUpBox")
+        signUp.classList.toggle("hide")
   }
 }
 

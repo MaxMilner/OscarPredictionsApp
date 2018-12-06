@@ -10,7 +10,7 @@
 
 <body>
 
-  <header>Oscar Predictions App
+  <header id="header">Oscar Predictions App
     <article class="login">
       <div id="loginBox" class="loginBox">
         <input type="text" id="login" placeholder="Username" required>
@@ -20,13 +20,13 @@
     </article>
   </header>
 
-  <div id="navBar" class="navBar hide">
-      <ul>
-        <li id= "logOutNav"><a class="home">Logout</a></li>
-      </ul>
-  </div>
+  <article id="logout" class="logout hide">
+      <div id="logoutBox" class="logoutBox">
+        <input type="button" id="logoutButton" class="logoutButton" value="Sign Out">
+      </div>
+  </article>
 
-    <div class="signUp">
+    <article class="signUp">
       <div id="signUpBox" class="signUpBox">
         <input type="text" id="email" placeholder="Email" required>
           <p class = "error"></p>
@@ -39,13 +39,17 @@
         <br></br>
         <button type="submit" id="signUpButton" class="signUpButton">Sign Up</button>
       </div>
-    </div>
+    </article>
 
   <div class="domEntry">
   </div>
 
     <script src="bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<div class="footer">
+  <p>The 91st Academy Awards Will Broadcast On February 24, 2019</p>
+</div>
 
 </body>
 

@@ -11,7 +11,7 @@ function loginUser() {
           sessionStorage.setItem("user_id", user.id)
           sessionStorage.setItem("email", email.value)
           hideDiv.hideLoginDiv()
-          hideDiv.hideNavBarDiv()
+          hideDiv.hideSignUpDiv()
             alert("YO DOG CHILI CHEESE")
         } else {
             alert("iNcOrReCt PaSsWoRd")
