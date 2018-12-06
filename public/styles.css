@@ -6,7 +6,7 @@ header {
 }
 
 #header {
-  background: url(curtains.jpeg) center no-repeat;
+  background: url(curtains.jpg);
 }
 
 .login {
@@ -19,7 +19,9 @@ header {
 }
 
 input {
+  border: 5px solid white;
   border-radius: 2px;
+  margin: 0 0 10px 0;
   padding: 2px;
 }
 
@@ -34,6 +36,10 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 /* Styling for input errors */
@@ -53,7 +59,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: url(curtains.jpeg);
+  background: url(curtains.jpg);
   color: gold;
   text-align: center;
 }

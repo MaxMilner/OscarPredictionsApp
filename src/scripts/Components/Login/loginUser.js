@@ -12,10 +12,11 @@ function loginUser() {
           sessionStorage.setItem("email", email.value)
           hideDiv.hideLoginDiv()
           hideDiv.hideSignUpDiv()
+          hideDiv.toggleSignOutDiv()
             alert("YO DOG CHILI CHEESE")
         } else {
             alert("iNcOrReCt PaSsWoRd")
-          }
+        }
       })
 }
 

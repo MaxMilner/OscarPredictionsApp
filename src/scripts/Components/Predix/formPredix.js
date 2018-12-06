@@ -1,5 +1,5 @@
-function predictionsFormDiv() {
-  let predictionsForm =
+function predixFormDiv() {
+  let predixForm =
   `<div id="predictionsFormBox" class="predictionsFormBox">
   <input type="text" id="vfx" class="vfx" placeholder="Best Visual Effects" value=""/>
   <br></br>
@@ -51,9 +51,9 @@ function predictionsFormDiv() {
   </br></br>
   <input type="text" id="picture" class="picture" value="" />
   </br></br>
-  <button id="subEv" class="submitEv">Submit</button>
+  <button id="subPredix" class="submitPredix">Submit</button>
   </div>`
-  return predictionsForm
+  return predixForm
 }
 
-export default predictionsFormDiv
+export default predixFormDiv
