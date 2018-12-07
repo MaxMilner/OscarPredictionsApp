@@ -6,7 +6,7 @@ function predixDiv(predix) {
     <p>Best Director: ${predix.director}</p>
     <p>Best Leading Actor: ${predix.actor}</p>
     <p>Best Leading Actress: ${predix.actress}</p>
-    <button id="delPredix" class=${predix.id}>Delete</button>
+    <input type="button" id="delPredix" class=${predix.id} value="Delete">
   </div>`
 return userPredix
 }

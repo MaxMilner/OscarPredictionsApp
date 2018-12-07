@@ -1,13 +1,16 @@
 import signUser from "./Components/Login/signUser"
 import hideDiv from "./Components/Login/hideAndShow"
 import loginUser from "./Components/Login/loginUser"
-// import eventListening from "./Components/Predix/eventListening"
-// import predixDom from "./Components/Predix/displayPredix"
+import appearForm from "./Components/Predix/appearForm"
+// import eventListening from "./Components/Predix/eventListeners"
+// import submitPredix from "./Components/Predix/submitPredix";
+import predixDom from "./Components/Predix/displayPredix";
+// import predixFormDiv from "./Components/Predix/formPredix";
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
-let signOut = document.querySelector(".signOut")
-// let predix = document.querySelector("#predixDiv")
+let signOut = document.getElementById("signOut")
+// let subPredix = document.getElementById("subPredix")
 
 const session = sessionStorage.getItem("user_id")
   if (session === null) {
@@ -20,17 +23,23 @@ const session = sessionStorage.getItem("user_id")
 
   newUsers.addEventListener("click", () => {
     signUser()
-    // hideDiv.hideSignUpDiv()
-    // hideDiv.hideLoginDiv()
+
 })
 
   existingUserButton.addEventListener("click", () => {
     loginUser()
-    // hideDiv.hideLoginDiv()
+    predixDom()
 })
 
-  // predix.addEventListener("click", () => {
-  //   predixDom()
-  //   eventListening.submitPredix()
-  //   eventListening.deletePredix()
-  // })
+// subPredix.addEventListener("click", () => {
+//   predixDom()
+//   submitPredix()
+//   eventListening.submitPredix()
+// })
+
+/* Making the predixForm appear */
+let signUp = document.getElementById("signUpButton")
+  signUp.addEventListener("click", () => {
+    console.log("buttonClicked")
+    appearForm()
+})

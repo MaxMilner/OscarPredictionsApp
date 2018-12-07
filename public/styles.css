@@ -23,6 +23,7 @@ input {
   border-radius: 2px;
   margin: 0 0 10px 0;
   padding: 2px;
+  width: 180px;
 }
 
 body {
@@ -40,6 +41,15 @@ body {
 
 .hide {
   visibility: hidden;
+}
+
+#predixFormBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -180px;
 }
 
 /* Styling for input errors */

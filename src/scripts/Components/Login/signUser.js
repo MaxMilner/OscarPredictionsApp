@@ -14,6 +14,7 @@ function signUser() {
     )
     hideDiv.hideLoginDiv()
     hideDiv.hideSignUpDiv()
+    hideDiv.toggleSignOutDiv()
 }
 
 export default signUser

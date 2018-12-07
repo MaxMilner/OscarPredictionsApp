@@ -2,19 +2,20 @@
 // import predixDiv from "./predix"
 // import predixFormDiv from "./formPredix"
 
-// let domEntry = document.querySelector(".domEntry")
+// let domEntry = document.getElementById("domEntry")
 //   function domPredix(parsedPredix) {
 //     parsedPredix.forEach(predix => {
-//       let predixContents = predixDiv(predix)
-//       domEntry.innerHTML += predixContents
-//   })
-// }
+//       let predixContent = predixDiv(predix)
+//       domEntry.innerHTML += predixContent
+//     })
+//   }
 
-// let predixDom = () => {
-//   domEntry.innerHTML=""
-//   domEntry.innerHTML += predixFormDiv()
-//   predixAPIfunctions.getPredix()
-//   .then(parsedPredix => domPredix(parsedPredix))
-// }
+//   let predixDom = () => {
+//     console.log("domForm")
+//     domEntry.innerHTML=""
+//     domEntry.innerHTML += predixFormDiv()
+//     predixAPIfunctions.getPredix()
+//     .then(parsedPredix => domPredix(parsedPredix))
+//   }
 
-// export default predixDom
+//   export default predixDom
