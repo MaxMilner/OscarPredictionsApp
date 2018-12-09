@@ -8,7 +8,7 @@ import submitPredix from "./Components/Predix/submitPredix";
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 let signOut = document.getElementById("signOut")
-let submit = document.getElementById("predixFormBox")
+let submit = document.getElementById("subPredix")
 
 const session = sessionStorage.getItem("user_id")
   if (session === null) {
@@ -21,10 +21,21 @@ const session = sessionStorage.getItem("user_id")
   })
 
 /* After signing up, Predictions form appears */
+  // newUsers.addEventListener("click", () => {
+  //   console.log("signed up")
+  //   signUser()
+  //   appearForm()
+  // })
+
   newUsers.addEventListener("click", () => {
     console.log("signed up")
     signUser()
     appearForm()
+    let submit = document.getElementById("predixFormBox")
+    submit.addEventListener("click", () => {
+      console.log("submitted")
+      submitPredix()
+    })
   })
 
 /* Upon login the user can see their predictions */
@@ -33,8 +44,8 @@ const session = sessionStorage.getItem("user_id")
     predixDom()
   })
 
-  console.log("submit")
 /* Making Submit event listener */
   submit.addEventListener("click", () => {
+    console.log("submit")
     submitPredix()
   })
