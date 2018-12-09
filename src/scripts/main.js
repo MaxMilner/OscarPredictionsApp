@@ -2,44 +2,39 @@ import signUser from "./Components/Login/signUser"
 import hideDiv from "./Components/Login/hideAndShow"
 import loginUser from "./Components/Login/loginUser"
 import appearForm from "./Components/Predix/appearForm"
-// import eventListening from "./Components/Predix/eventListeners"
-// import submitPredix from "./Components/Predix/submitPredix";
 import predixDom from "./Components/Predix/displayPredix";
-// import predixFormDiv from "./Components/Predix/formPredix";
+import submitPredix from "./Components/Predix/submitPredix";
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 let signOut = document.getElementById("signOut")
-// let subPredix = document.getElementById("subPredix")
+let submit = document.getElementById("predixFormBox")
 
 const session = sessionStorage.getItem("user_id")
   if (session === null) {
       hideDiv.toggleSignOutDiv()
-}
+  }
 
   signOut.addEventListener("click", () => {
+    console.log("sign out")
     hideDiv.signOut()
-  } )
+  })
 
+/* After signing up, Predictions form appears */
   newUsers.addEventListener("click", () => {
+    console.log("signed up")
     signUser()
+    appearForm()
+  })
 
-})
-
+/* Upon login the user can see their predictions */
   existingUserButton.addEventListener("click", () => {
     loginUser()
     predixDom()
-})
+  })
 
-// subPredix.addEventListener("click", () => {
-//   predixDom()
-//   submitPredix()
-//   eventListening.submitPredix()
-// })
-
-/* Making the predixForm appear */
-let signUp = document.getElementById("signUpButton")
-  signUp.addEventListener("click", () => {
-    console.log("buttonClicked")
-    appearForm()
-})
+  console.log("submit")
+/* Making Submit event listener */
+  submit.addEventListener("click", () => {
+    submitPredix()
+  })
