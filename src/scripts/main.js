@@ -21,12 +21,6 @@ const session = sessionStorage.getItem("user_id")
   })
 
 /* After signing up, Predictions form appears */
-  // newUsers.addEventListener("click", () => {
-  //   console.log("signed up")
-  //   signUser()
-  //   appearForm()
-  // })
-
   newUsers.addEventListener("click", () => {
     console.log("signed up")
     signUser()
