@@ -4,13 +4,12 @@ import loginUser from "./Components/Login/loginUser"
 import appearForm from "./Components/Predix/appearForm"
 import predixDom from "./Components/Predix/displayPredix"
 import submitPredix from "./Components/Predix/submitPredix"
+// import eventListening from "./Components/Predix/eventListeners";
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 let signOut = document.getElementById("signOut")
-// const predixFormDiv = document.getElementById("predixFormBox")
-
-
+// let delPredix = document.getElementById("delPredix")
 
 const session = sessionStorage.getItem("user_id")
   if (session === null) {
@@ -39,6 +38,7 @@ const session = sessionStorage.getItem("user_id")
 
 /* Upon login the user can see their predictions */
   existingUserButton.addEventListener("click", () => {
+    console.log("logged in")
     loginUser()
     predixDom()
   })

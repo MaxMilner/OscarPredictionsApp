@@ -36,17 +36,26 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  align-content: stretch;
 }
 
 .hide {
   visibility: hidden;
 }
 
+.signOut {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
 #predixFormBox {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: -180px;
@@ -54,6 +63,15 @@ body {
 
 body {
   color: gold;
+}
+
+.predixDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -180px;
 }
 
 /* Styling for input errors */

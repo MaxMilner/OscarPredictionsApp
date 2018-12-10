@@ -11,21 +11,19 @@ const hideDiv = {
   },
 
   toggleSignOutDiv() {
-    console.log("toggle working?")
     const signOut = document.getElementById("signOut")
     signOut.classList.toggle("hide")
   },
 
   hidePredixFormDiv() {
-    // console.log(newPredix)
+    console.log("predix form hide?")
     const predixForm = document.getElementById("predixFormBox")
-    // predixForm.classList.toggle("hide")
     predixForm.innerHTML = ""
-    // console.log(predixForm)
   },
 
   signOut() {
     sessionStorage.clear()
+    domEntry.innerHTML = ""
       const login = document.getElementById("loginBox")
         login.classList.toggle("hide")
       const signUp = document.getElementById("signUpBox")

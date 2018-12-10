@@ -2,32 +2,56 @@ function predixDiv(predix) {
   console.log(predix)
   let userPredix =
   `<div id="predixDiv" class="predixDiv">
-    <p>Best Picture: ${predix.picture}</p>
-    <p>Best Director: ${predix.director}</p>
-    <p>Best Leading Actor: ${predix.actor}</p>
-    <p>Best Leading Actress: ${predix.actress}</p>
-    <p>Best Supporting Actor: ${predix.supActor}</p>
-    <p>Best Supporting Actress: ${predix.supActress}</p>
-    <p>Best Original Screenplay: ${predix.original}</p>
-    <p>Best Adapted Screenplay: ${predix.adapted}</p>
-    <p>Best Supporting Actress: ${predix.supActress}</p>
-    <p>Best Outstanding Popular Film: ${predix.popular}</p>
-    <p>Best Animated Feature: ${predix.animated}</p>
-    <p>Best Foreign Language Film: ${predix.foreign}</p>
-    <p>Best Documentary Feature: ${predix.doc}</p>
-    <p>Best Documentary Short: ${predix.docShort}</p>
-    <p>Best Live Action Short: ${predix.liveShort}</p>
-    <p>Best Animated Short: ${predix.aniShort}</p>
-    <p>Best Original Score: ${predix.score}</p>
-    <p>Best Original Song: ${predix.song}</p>
-    <p>Best Sound Editing: ${predix.soundEd}</p>
-    <p>Best Sound Mixing: ${predix.soundMix}</p>
-    <p>Best Production Design: ${predix.production}</p>
-    <p>Best Cinematopgrahy: ${predix.cine}</p>
-    <p>Best Makeup & Hairstyling: ${predix.makeup}</p>
-    <p>Best Costume Design: ${predix.costume}</p>
-    <p>Best Film Editing: ${predix.editinng}</p>
-    <p>Best Visual Effects: ${predix.vfx}</p>
+    <p>BEST PICTURE:</p>
+    <p>${predix.picture}</p>
+    <p>BEST DIRECTOR:</p>
+    <p>${predix.director}</p>
+    <p>BEST LEADING ACTOR:</p>
+    <p>${predix.leadActor}</p>
+    <p>BEST LEADING ACTRESS:</p>
+    <p>${predix.leadActress}</p>
+    <p>BEST SUPPORTING ACTOR:</p>
+    <p>${predix.supActor}</p>
+    <p>BEST SUPPORTINGACTRESS:</p>
+    <p>${predix.supActress}</p>
+    <p>BEST ORIGINAL SCREENPLAY:</p>
+    <p>${predix.original}</p>
+    <p>BEST ADAPTED SCREENPLAY:</p>
+    <p>${predix.adapted}</p>
+    <p>BEST OUTSTANDING POPULAR FILM:</p>
+    <p>${predix.popular}</p>
+    <p>BEST ANIMATED FEATURE:</p>
+    <p>${predix.animated}</p>
+    <p>BEST FOREIGN LANGUAGE FILM:</p>
+    <p>${predix.foreign}</p>
+    <p>BEST DOCUMENTARY FEATURE:</p>
+    <p>${predix.doc}</p>
+    <p>BEST DOCUMENTARY SHORT:</p>
+    <p>${predix.docShort}</p>
+    <p>BEST LIVE ACTION SHORT:</p>
+    <p>${predix.liveShort}</p>
+    <p>BEST ANIMATED SHORT:</p>
+    <p>${predix.aniShort}</p>
+    <p>BEST ORIGINAL SCORE:</p>
+    <p>${predix.score}</p>
+    <p>BEST ORIGINAL SONG:</p>
+    <p>${predix.song}</p>
+    <p>BEST SOUND EDITING:</p>
+    <p>${predix.soundEd}</p>
+    <p>BEST SOUND MIXING:</p>
+    <p>${predix.soundMix}</p>
+    <p>BEST PRODUCTION DESIGN:</p>
+    <p>${predix.production}</p>
+    <p>BEST CINEMATOGRAPHY:</p>
+    <p>${predix.cine}</p>
+    <p>BEST MAKEUP & HAIRSTYLING:</p>
+    <p>${predix.makeup}</p>
+    <p>BEST COSTUME DESIGN:</p>
+    <p>${predix.costume}</p>
+    <p>BEST FILM EDITING:</p>
+    <p>${predix.editing}</p>
+    <p>BEST VISUAL EFFECTS:</p>
+    <p>${predix.vfx}</p>
     <input type="button" id="delPredix" class=${predix.id} value="Delete">
   </div>`
 return userPredix

@@ -13,9 +13,9 @@ function loginUser() {
           hideDiv.hideLoginDiv()
           hideDiv.hideSignUpDiv()
           hideDiv.toggleSignOutDiv()
-            alert("YO DOG CHILI CHEESE")
+            alert("Success!")
         } else {
-            alert("iNcOrReCt PaSsWoRd")
+            alert("WRONG")
         }
       })
 }

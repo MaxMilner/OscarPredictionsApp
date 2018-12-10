@@ -1,6 +1,5 @@
 import predixAPIfunctions from "./fetching"
 import predixDiv from "./predix"
-import predixFormDiv from "./formPredix"
 
 let domEntry = document.getElementById("domEntry")
   function domPredix(parsedPredix) {
@@ -12,7 +11,6 @@ let domEntry = document.getElementById("domEntry")
 
   let predixDom = () => {
     domEntry.innerHTML=""
-    // domEntry.innerHTML += predixFormDiv()
     predixAPIfunctions.getPredix()
     .then(parsedPredix => {
       console.log(parsedPredix)

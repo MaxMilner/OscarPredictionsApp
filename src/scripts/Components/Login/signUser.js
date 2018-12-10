@@ -1,6 +1,6 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./hideAndShow";
-// import loginUser from "./loginUser"
+import loginUser from "./loginUser";
 
 function signUser() {
   sessionStorage.clear()
@@ -11,6 +11,7 @@ function signUser() {
    }
   userAPIfunctions.postUser(user)
     .then((response) => response.json()
+    .then((user) => loginUser(user))
     )
     hideDiv.hideLoginDiv()
     hideDiv.hideSignUpDiv()
