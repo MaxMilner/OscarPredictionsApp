@@ -2,13 +2,15 @@ import signUser from "./Components/Login/signUser"
 import hideDiv from "./Components/Login/hideAndShow"
 import loginUser from "./Components/Login/loginUser"
 import appearForm from "./Components/Predix/appearForm"
-import predixDom from "./Components/Predix/displayPredix";
-import submitPredix from "./Components/Predix/submitPredix";
+import predixDom from "./Components/Predix/displayPredix"
+import submitPredix from "./Components/Predix/submitPredix"
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 let signOut = document.getElementById("signOut")
-let submit = document.getElementById("subPredix")
+// const predixFormDiv = document.getElementById("predixFormBox")
+
+
 
 const session = sessionStorage.getItem("user_id")
   if (session === null) {
@@ -25,10 +27,13 @@ const session = sessionStorage.getItem("user_id")
     console.log("signed up")
     signUser()
     appearForm()
-    let submit = document.getElementById("predixFormBox")
+/* Making Submit event listener */
+    let submit = document.getElementById("subPredix")
     submit.addEventListener("click", () => {
       console.log("submitted")
       submitPredix()
+      predixDom()
+      hideDiv.hidePredixFormDiv()
     })
   })
 
@@ -36,10 +41,4 @@ const session = sessionStorage.getItem("user_id")
   existingUserButton.addEventListener("click", () => {
     loginUser()
     predixDom()
-  })
-
-/* Making Submit event listener */
-  submit.addEventListener("click", () => {
-    console.log("submit")
-    submitPredix()
   })

@@ -3,14 +3,11 @@ const hideDiv = {
   hideLoginDiv() {
     const login = document.getElementById("loginBox")
     login.classList.toggle("hide")
-
   },
 
   hideSignUpDiv() {
     const signUp = document.getElementById("signUpBox")
-    // signUp.classList.add("hide")
     signUp.classList.toggle("hide")
-
   },
 
   toggleSignOutDiv() {
@@ -19,9 +16,16 @@ const hideDiv = {
     signOut.classList.toggle("hide")
   },
 
+  hidePredixFormDiv() {
+    // console.log(newPredix)
+    const predixForm = document.getElementById("predixFormBox")
+    // predixForm.classList.toggle("hide")
+    predixForm.innerHTML = ""
+    // console.log(predixForm)
+  },
+
   signOut() {
     sessionStorage.clear()
-    // document.querySelector(".domEntry").innerHTML = ""
       const login = document.getElementById("loginBox")
         login.classList.toggle("hide")
       const signUp = document.getElementById("signUpBox")

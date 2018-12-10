@@ -11,11 +11,12 @@ let domEntry = document.getElementById("domEntry")
   }
 
   let predixDom = () => {
-    console.log("domForm")
     domEntry.innerHTML=""
-    domEntry.innerHTML += predixFormDiv()
+    // domEntry.innerHTML += predixFormDiv()
     predixAPIfunctions.getPredix()
-    .then(parsedPredix => domPredix(parsedPredix))
+    .then(parsedPredix => {
+      console.log(parsedPredix)
+      return domPredix(parsedPredix)})
   }
 
   export default predixDom

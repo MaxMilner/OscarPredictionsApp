@@ -1,7 +1,7 @@
 const predixAPIfunctions = {
 
   getPredix() {
-    return fetch("http://localhost:3000/predix")
+    return fetch("http://localhost:3000/predictions")
     .then(predix => predix.json() )
     .then(parsedPredix => parsedPredix)
   },

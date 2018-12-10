@@ -5,7 +5,42 @@
       "email": "1",
       "password": "1",
       "id": 0
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 1
     }
   ],
-  "predictions": []
+  "predictions": [
+    {
+      "picture": "",
+      "director": "",
+      "leadActor": "",
+      "leadActress": "",
+      "supActor": "",
+      "supActress": "",
+      "original": "",
+      "adapted": "",
+      "popular": "",
+      "animated": "",
+      "foreign": "",
+      "doc": "",
+      "docShort": "",
+      "liveShort": "",
+      "aniShort": "",
+      "score": "",
+      "song": "",
+      "soundEd": "",
+      "soundMix": "",
+      "production": "",
+      "cine": "",
+      "makeup": "",
+      "costume": "",
+      "editing": "",
+      "vfx": "",
+      "id": 1
+    }
+  ]
 }

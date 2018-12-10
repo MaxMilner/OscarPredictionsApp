@@ -2,7 +2,7 @@ import predixFormDiv from "./formPredix"
 
 function appearForm() {
   domEntry.innerHTML=""
-  domEntry.innerHTML += predixFormDiv()
+  domEntry.innerHTML = predixFormDiv()
 }
 
 export default appearForm

@@ -1,5 +1,5 @@
 import predixAPIfunctions from "./fetching"
-import predixDom from "./displayPredix";
+import predixDiv from "./displayPredix";
 
 function submitPredix() {
   let user_idValue = sessionStorage.user_id
@@ -59,7 +59,7 @@ function submitPredix() {
   }
 predixAPIfunctions.postPredix(userPredix)
 .then(() =>
-  predixDom())
+  predixDiv())
 }
 
 export default submitPredix
