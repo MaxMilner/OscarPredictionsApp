@@ -5,90 +5,12 @@
       "email": "1",
       "password": "1",
       "id": 1
-    },
-    {
-      "username": "2",
-      "email": "2",
-      "password": "2",
-      "id": 2
-    },
-    {
-      "username": "2",
-      "email": "2",
-      "password": "2",
-      "id": 3
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 4
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 5
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 6
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 7
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 8
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 9
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 10
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 11
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 12
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 13
-    },
-    {
-      "username": "3",
-      "email": "3",
-      "password": "3",
-      "id": 14
     }
   ],
   "predictions": [
     {
-      "picture": "butt",
-      "director": "",
+      "picture": "burritos",
+      "director": "kevin tarantula",
       "leadActor": "",
       "leadActress": "",
       "supActor": "",
@@ -111,95 +33,8 @@
       "makeup": "",
       "costume": "",
       "editing": "",
-      "vfx": "",
+      "vfx": "grapes",
       "id": 1
-    },
-    {
-      "user_id": "1",
-      "picture": "",
-      "director": "",
-      "leadActor": "",
-      "leadActress": "",
-      "supActor": "",
-      "supActress": "",
-      "original": "",
-      "adapted": "",
-      "popular": "",
-      "animated": "",
-      "foreign": "",
-      "doc": "",
-      "docShort": "",
-      "liveShort": "",
-      "aniShort": "",
-      "score": "",
-      "song": "",
-      "soundEd": "",
-      "soundMix": "",
-      "production": "",
-      "cine": "",
-      "makeup": "",
-      "costume": "",
-      "editing": "",
-      "vfx": "",
-      "id": 2
-    },
-    {
-      "user_id": "4",
-      "picture": "",
-      "director": "",
-      "leadActor": "",
-      "leadActress": "",
-      "supActor": "",
-      "supActress": "",
-      "original": "",
-      "adapted": "",
-      "popular": "",
-      "animated": "",
-      "foreign": "",
-      "doc": "",
-      "docShort": "",
-      "liveShort": "",
-      "aniShort": "",
-      "score": "",
-      "song": "",
-      "soundEd": "",
-      "soundMix": "",
-      "production": "",
-      "cine": "",
-      "makeup": "",
-      "costume": "",
-      "editing": "",
-      "vfx": "",
-      "id": 3
-    },
-    {
-      "user_id": "4",
-      "picture": "",
-      "director": "",
-      "leadActor": "",
-      "leadActress": "",
-      "supActor": "",
-      "supActress": "",
-      "original": "",
-      "adapted": "",
-      "popular": "",
-      "animated": "",
-      "foreign": "",
-      "doc": "",
-      "docShort": "",
-      "liveShort": "",
-      "aniShort": "",
-      "score": "",
-      "song": "",
-      "soundEd": "",
-      "soundMix": "",
-      "production": "",
-      "cine": "",
-      "makeup": "",
-      "costume": "",
-      "editing": "",
-      "vfx": "",
-      "id": 4
     }
   ]
 }

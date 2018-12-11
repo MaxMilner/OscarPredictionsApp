@@ -1,11 +1,11 @@
-// import predixAPIfunctions from "./Components/"
-// import predixDom from "./displayPredix"
+import predixAPIfunctions from "./fetching"
+import predixDom from "./displayPredix"
 
-// function deletePredix(e) {
-//   predixAPIfunctions.deleteFunction(e)
-//   .the(() => {
-//     predixDom()
-//   })
-// }
+function deletePredix(predixId) {
+  predixAPIfunctions.deletePredix(predixId)
+  .then(() => {
+    predixDom()
+  })
+}
 
-// export default deletePredix
+export default deletePredix

@@ -4,12 +4,13 @@ import loginUser from "./Components/Login/loginUser"
 import appearForm from "./Components/Predix/appearForm"
 import predixDom from "./Components/Predix/displayPredix"
 import submitPredix from "./Components/Predix/submitPredix"
-// import eventListening from "./Components/Predix/eventListeners";
+import eventListening from "./Components/Predix/eventListeners"
+// import editButton from "./Components/Predix/editListeners"
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 let signOut = document.getElementById("signOut")
-// let delPredix = document.getElementById("delPredix")
+// let pick = document.getElementById("editPick")
 
 const session = sessionStorage.getItem("user_id")
   if (session === null) {
@@ -17,19 +18,22 @@ const session = sessionStorage.getItem("user_id")
   }
 
   signOut.addEventListener("click", () => {
-    console.log("sign out")
+    console.log("signing out?")
     hideDiv.signOut()
   })
 
-/* After signing up, Predictions form appears */
+/* After Signing Up, Predictions Form appears */
   newUsers.addEventListener("click", () => {
-    console.log("signed up")
+    console.log("signing up?")
     signUser()
     appearForm()
-/* Making Submit event listener */
+    hideDiv.hideSignUpDiv()
+    hideDiv.hideLoginDiv()
+    hideDiv.toggleSignOutDiv()
+/* Making Submit event listener so Predictions can be Submitted to DOM */
     let submit = document.getElementById("subPredix")
     submit.addEventListener("click", () => {
-      console.log("submitted")
+      console.log("submitted?")
       submitPredix()
       predixDom()
       hideDiv.hidePredixFormDiv()
@@ -38,7 +42,13 @@ const session = sessionStorage.getItem("user_id")
 
 /* Upon login the user can see their predictions */
   existingUserButton.addEventListener("click", () => {
-    console.log("logged in")
+    console.log("logging in?")
     loginUser()
     predixDom()
+    eventlistening.editButton()
   })
+
+// pick.addEventListener("click", () => {
+//   console.log("new pick?")
+//   eventListening.editButton()
+// })

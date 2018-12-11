@@ -1,9 +1,10 @@
 function predixDiv(predix) {
   console.log(predix)
   let userPredix =
-  `<div id="predixDiv" class="predixDiv">
+  `<div id=${predix.id} class="predixDiv">
     <p>BEST PICTURE:</p>
     <p>${predix.picture}</p>
+    <input type="button" id="editPick" class=${predix.id} value="Edit">
     <p>BEST DIRECTOR:</p>
     <p>${predix.director}</p>
     <p>BEST LEADING ACTOR:</p>
@@ -52,7 +53,12 @@ function predixDiv(predix) {
     <p>${predix.editing}</p>
     <p>BEST VISUAL EFFECTS:</p>
     <p>${predix.vfx}</p>
-    <input type="button" id="delPredix" class=${predix.id} value="Delete">
+    <input type="button" id="delPredix" class="delPredix" value="Delete">
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
   </div>`
 return userPredix
 }

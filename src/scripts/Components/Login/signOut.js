@@ -1,4 +1,5 @@
 function signOutCreate() {
+  sessionStorage.clear()
   let signOutButton =
   `<article id="signOut" class="signOut">
     <div id="signOutBox" class="signOutBox hide">
