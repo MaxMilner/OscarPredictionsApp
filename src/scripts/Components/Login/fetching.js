@@ -10,7 +10,7 @@ const userAPIfunctions = {
       .then(parsedUser => parsedUser[0])
   },
   postUser(user){
-      return fetch("http://localhost:3000/users?users" ,{
+      return fetch("http://localhost:3000/users?users" , {
       method:"POST",
       headers: {
           "Content-Type": "application/json"

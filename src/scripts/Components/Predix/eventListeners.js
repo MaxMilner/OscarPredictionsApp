@@ -1,11 +1,11 @@
 import submitPredix from "./submitPredix"
 import deletePredix from "./deletePredix"
-import editPick from "./editPick";
+import doneEditPredix from "./doneEdit";
 
 const eventListening = {
   submitButton() {
     document.addEventListener("click", (e) => {
-      if (e.target && e.target.id === "subPredix")
+      if (e.target.id === "subPredix")
       console.log("submit to me")
       submitPredix()
     })
@@ -20,7 +20,7 @@ const eventListening = {
   editButton() {
     console.log("clicked editing?")
     document.addEventListener("click", (e) => {
-      if (e.target && e.target.id === "editPick") {
+      if (e.target.id === "editPick") {
         let id = e.target.className
         let userId = sessionStorage.user_id
         let predixPicture = document.querySelector("#predixPicture")
@@ -29,8 +29,17 @@ const eventListening = {
           user_id: userId
         }
         console.log("editing?", obj)
-        editPick(obj, id)
       }
+    })
+  },
+
+  doneButton() {
+    document.addEventListener("click", (e) => {
+      if (e.target.id === "donePick")
+        console.log("done?")
+        console.log(e.target.id)
+        doneEditPredix()
+         predixDom()
     })
   }
 }

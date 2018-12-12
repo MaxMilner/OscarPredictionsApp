@@ -57,7 +57,7 @@ function doneEditPredix() {
     editing: editingValue,
     vfx: vfxValue
   }
-predixAPIfunctions.patchPredix(userNewPredix)
+predixAPIfunctions.patchPredix(userNewPredix, )
 .then(() =>
   predixDiv())
 }
