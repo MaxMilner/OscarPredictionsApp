@@ -23,9 +23,9 @@ const eventListening = {
       if (e.target && e.target.id === "editPick") {
         let id = e.target.className
         let userId = sessionStorage.user_id
-        let pictureName = document.querySelector("newPick")
+        let predixPicture = document.querySelector("#predixPicture")
         let obj = {
-          picture: pictureName.value,
+          picture: predixPicture.value,
           user_id: userId
         }
         console.log("editing?", obj)
@@ -33,12 +33,6 @@ const eventListening = {
       }
     })
   }
-
-//   editButton = (v, e) => {
-//       const predixId = e.target.parentNode.id
-//       // const value = v.target.
-//       console.log("hi")
-//         editPredix(v, predixId)
-//   }
 }
+
 export default eventListening

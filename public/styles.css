@@ -86,6 +86,14 @@ body {
   text-align: center;
 }
 
+#editPick {
+  width: 50px;
+}
+
+#donePick {
+  width: 50px;
+}
+
 .footer {
   position: fixed;
   left: 0;

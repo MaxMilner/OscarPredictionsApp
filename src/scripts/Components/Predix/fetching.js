@@ -35,19 +35,6 @@ const predixAPIfunctions = {
     .then(nothing => nothing.json())
     .then(nothing => console.log(nothing))
   }
-
-//   editPredix(value, predixId) {
-//     console.log("editing", predixId);
-//     return fetch(`http://localhost:3000/predictions/${predixId}`, {
-//       method: "PATCH",
-//       headers: {
-//         "Content-Type": "application/json"
-//       },
-//       body: JSON.stringify(value)
-//     })
-//     .then(x => x.json())
-//     .then(x => console.log(x))
-//   }
 }
 
 export default predixAPIfunctions

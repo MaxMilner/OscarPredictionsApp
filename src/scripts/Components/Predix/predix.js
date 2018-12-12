@@ -3,14 +3,18 @@ function predixDiv(predix) {
   let userPredix =
   `<div id=${predix.id} class="predixDiv">
     <p>BEST PICTURE:</p>
-    <p>${predix.picture}</p>
-    <input type="button" id="editPick" class=${predix.id} value="Edit">
+    <p id="predixPicture" class="predixPicture">${predix.picture}</p>
+      <input type="button" id="editPick" class=${predix.id} value="Edit">
+        <div id="editDiv" class="editDiv">
+          <input type="text" id="editPredixPicture" class=${predix.id} value="${predix.picture}">
+            <button id="donePick" class="donePick">Done</button>
+        </div>
     <p>BEST DIRECTOR:</p>
     <p>${predix.director}</p>
     <p>BEST LEADING ACTOR:</p>
-    <p>${predix.leadActor}</p>
+    <p>${predix.leadActor}</span>
     <p>BEST LEADING ACTRESS:</p>
-    <p>${predix.leadActress}</p>
+    <p>${predix.leadActress}</span>
     <p>BEST SUPPORTING ACTOR:</p>
     <p>${predix.supActor}</p>
     <p>BEST SUPPORTINGACTRESS:</p>

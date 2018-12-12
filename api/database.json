@@ -9,8 +9,8 @@
   ],
   "predictions": [
     {
-      "picture": "burritos",
-      "director": "kevin tarantula",
+      "picture": "Famous Amos",
+      "director": "Kevin Tarantula",
       "leadActor": "",
       "leadActress": "",
       "supActor": "",
@@ -33,7 +33,7 @@
       "makeup": "",
       "costume": "",
       "editing": "",
-      "vfx": "grapes",
+      "vfx": "Cool Effects!",
       "id": 1
     }
   ]

@@ -9,7 +9,6 @@ let domEntry = document.getElementById("domEntry")
       domEntry.innerHTML += predixContent
     })
     assignDeleteListener()
-    // assignEditListener()
   }
 
   function assignDeleteListener() {
@@ -19,15 +18,6 @@ let domEntry = document.getElementById("domEntry")
          eventListening.deleteButton(e)
        })
   }
-
-  // function assignEditListener() {
-  //   let editing = document.getElementById("edPredix")
-  //     editing.addEventListener("click", (e) => {
-  //       console.log("editing?")
-  //       let v = document.getElementById("1").value
-  //       eventListening.editButton(v, e)
-  //     })
-  // }
 
   let predixDom = () => {
     domEntry.innerHTML=""
