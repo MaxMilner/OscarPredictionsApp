@@ -1,33 +1,33 @@
 import predixAPIfunctions from "./fetching"
 import predixDiv from "./displayPredix";
 
-function doneEditPredix() {
-  let user_idValue = sessionStorage.user_id
-  let pictureValue = document.querySelector("#editPredixPicture").value
-  let directorValue = document.querySelector("#editPredixDirector").value
-  let leadActorValue = document.querySelector("#editPredixLeadActor").value
-  let leadActressValue = document.querySelector("#editPredixLeadActress").value
-  let supActorValue = document.querySelector("#editPredixSupActor").value
-  let supActressValue = document.querySelector("#editPredixSupActress").value
-  let originalValue = document.querySelector("#editPredixOriginal").value
-  let adaptedValue = document.querySelector("#editPredixAdapted").value
-  let popularValue = document.querySelector("#editPredixPopular").value
-  let animatedValue = document.querySelector("#editPredixAnimated").value
-  let foreignValue = document.querySelector("#editPredixForeign").value
-  let docValue = document.querySelector("#editPredixDoc").value
-  let docShortValue = document.querySelector("#editPredixDocShort").value
-  let liveShortValue = document.querySelector("#editPredixLiveShort").value
-  let aniShortValue = document.querySelector("#editPredixAniShort").value
-  let scoreValue = document.querySelector("#editPredixScore").value
-  let songValue = document.querySelector("#editPredixSong").value
-  let soundEdValue = document.querySelector("#editPredixSoundEd").value
-  let soundMixValue = document.querySelector("#editPredixSoundMix").value
-  let productionValue = document.querySelector("#editPredixProduction").value
-  let cineValue = document.querySelector("#editPredixCine").value
-  let makeupValue = document.querySelector("#editPredixMakeup").value
-  let costumeValue = document.querySelector("#editPredixCostume").value
-  let editingValue = document.querySelector("#editPredixEditing").value
-  let vfxValue = document.querySelector("#editPredixVfx").value
+function doneEditPredix(id) {
+  let user_idValue = sessionStorage.getItem("user_id")
+  let pictureValue = document.querySelector("#editPicture").value
+  let directorValue = document.querySelector("#editDirector").value
+  let leadActorValue = document.querySelector("#editLeadActor").value
+  let leadActressValue = document.querySelector("#editLeadActress").value
+  let supActorValue = document.querySelector("#editSupActor").value
+  let supActressValue = document.querySelector("#editSupActress").value
+  let originalValue = document.querySelector("#editOriginal").value
+  let adaptedValue = document.querySelector("#editAdapted").value
+  let popularValue = document.querySelector("#editPopular").value
+  let animatedValue = document.querySelector("#editAnimated").value
+  let foreignValue = document.querySelector("#editForeign").value
+  let docValue = document.querySelector("#editDoc").value
+  let docShortValue = document.querySelector("#editDocShort").value
+  let liveShortValue = document.querySelector("#editLiveShort").value
+  let aniShortValue = document.querySelector("#editAniShort").value
+  let scoreValue = document.querySelector("#editScore").value
+  let songValue = document.querySelector("#editSong").value
+  let soundEdValue = document.querySelector("#editSoundEd").value
+  let soundMixValue = document.querySelector("#editSoundMix").value
+  let productionValue = document.querySelector("#editProduction").value
+  let cineValue = document.querySelector("#editCine").value
+  let makeupValue = document.querySelector("#editMakeup").value
+  let costumeValue = document.querySelector("#editCostume").value
+  let editingValue = document.querySelector("#editEditing").value
+  let vfxValue = document.querySelector("#editVfx").value
 
   let userNewPredix = {
     user_id: user_idValue,
@@ -57,7 +57,7 @@ function doneEditPredix() {
     editing: editingValue,
     vfx: vfxValue
   }
-predixAPIfunctions.patchPredix(userNewPredix, )
+predixAPIfunctions.putPredix(userNewPredix, id)
 .then(() =>
   predixDiv())
 }

@@ -5,7 +5,6 @@ import appearForm from "./Components/Predix/appearForm"
 import predixDom from "./Components/Predix/displayPredix"
 import submitPredix from "./Components/Predix/submitPredix"
 import eventListening from "./Components/Predix/eventListeners"
-import doneEditPredix from "./Components/Predix/doneEdit";
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")

@@ -23,10 +23,10 @@ const predixAPIfunctions = {
     }).then(x => x.json())
   },
 
-  patchPredix(value, predixId) {
-    console.log("patching?", value, predixId)
+  putPredix(value, predixId) {
+    console.log("put?", value, predixId)
     return fetch(`http://localhost:3000/predictions/${predixId}`, {
-      method: "PATCH",
+      method: "PUT",
       headers: {
         "Content-Type": "application/json"
       },

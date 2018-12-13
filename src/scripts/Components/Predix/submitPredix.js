@@ -2,7 +2,7 @@ import predixAPIfunctions from "./fetching"
 import predixDiv from "./displayPredix";
 
 function submitPredix() {
-  let user_idValue = sessionStorage.user_id
+  let user_idValue = sessionStorage.getItem("user_id")
   let pictureValue = document.querySelector("#picture").value
   let directorValue = document.querySelector("#director").value
   let leadActorValue = document.querySelector("#leadActor").value

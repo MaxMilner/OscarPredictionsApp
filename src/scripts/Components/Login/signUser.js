@@ -1,6 +1,6 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./hideAndShow";
-import loginUser from "./loginUser";
+import auth from "./loginUser"
 
 function signUser() {
   sessionStorage.clear()
@@ -11,11 +11,13 @@ function signUser() {
    }
   userAPIfunctions.postUser(user)
     .then((response) => response.json()
-    .then((user) => loginUser(user))
+    .then((user) => auth.registerLogin(user))
     )
     hideDiv.hideLoginDiv()
     hideDiv.hideSignUpDiv()
     hideDiv.toggleSignOutDiv()
+    // sessionStorage.setItem("user_id")
+    // sessionStorage.setItem("email")
 }
 
 export default signUser
