@@ -21,7 +21,7 @@ let domEntry = document.getElementById("domEntry")
 
   let predixDom = () => {
     domEntry.innerHTML=""
-    predixAPIfunctions.getPredix()
+    predixAPIfunctions.getUserRunPredix()
     .then(parsedPredix => {
       console.log(parsedPredix)
       return domPredix(parsedPredix)})

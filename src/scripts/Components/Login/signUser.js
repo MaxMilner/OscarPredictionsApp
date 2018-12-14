@@ -1,23 +1,19 @@
 import userAPIfunctions from "./fetching"
-import hideDiv from "./hideAndShow";
-import auth from "./loginUser"
+import hideDiv from "./hideAndShow"
+import newLoginUser from "./newLogin"
 
 function signUser() {
   sessionStorage.clear()
   let user = {
-      username: document.querySelector("#username").value,
       email: document.querySelector("#email").value,
       password: document.querySelector("#password").value
    }
   userAPIfunctions.postUser(user)
-    .then((response) => response.json()
-    .then((user) => auth.registerLogin(user))
-    )
+    .then((response) => response.json())
+    .then((user) => newLoginUser(user))
     hideDiv.hideLoginDiv()
     hideDiv.hideSignUpDiv()
     hideDiv.toggleSignOutDiv()
-    // sessionStorage.setItem("user_id")
-    // sessionStorage.setItem("email")
 }
 
 export default signUser

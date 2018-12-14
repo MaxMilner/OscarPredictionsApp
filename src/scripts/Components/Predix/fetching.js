@@ -1,6 +1,14 @@
 const predixAPIfunctions = {
-  getPredix() {
-    return fetch("http://localhost:3000/predictions")
+  getUserRunPredix() {
+    let id = sessionStorage.getItem("user_id")
+  if (id === null) {
+  } else {
+   return this.getPredix(id)
+  }
+  },
+
+  getPredix(id) {
+    return fetch(`http://localhost:3000/predictions?user_id=${id}`)
       .then(predix => predix.json())
       .then(parsedPredix => parsedPredix);
   },
@@ -18,7 +26,7 @@ const predixAPIfunctions = {
 
   deletePredix(predixId) {
     console.log("deleting", predixId);
-    return fetch(`http://localhost:3000/predictions/${predixId}`, {
+    return fetch(`http://localhost:3000/predictions${predixId}`, {
       method: "DELETE"
     }).then(x => x.json())
   },

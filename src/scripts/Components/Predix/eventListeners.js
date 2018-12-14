@@ -33,7 +33,7 @@ const eventListening = {
   },
 
   doneButton() {
-    document.addEventListener("click", e => {
+    document.addEventListener("click", (e) => {
       if (e.target.id === "donePick") {
         console.log("done?")
         console.log(e.target.id)

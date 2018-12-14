@@ -30,7 +30,7 @@ function submitPredix() {
   let vfxValue = document.querySelector("#vfx").value
 
   let userPredix = {
-    user_id: user_idValue,
+    user_id: Number(user_idValue),
     picture: pictureValue,
     director: directorValue,
     leadActor: leadActorValue,

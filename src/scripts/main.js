@@ -1,6 +1,6 @@
+import loginUser from "./Components/Login/loginUser"
 import signUser from "./Components/Login/signUser"
 import hideDiv from "./Components/Login/hideAndShow"
-import loginUser from "./Components/Login/loginUser"
 import appearForm from "./Components/Predix/appearForm"
 import predixDom from "./Components/Predix/displayPredix"
 import submitPredix from "./Components/Predix/submitPredix"
@@ -24,7 +24,8 @@ const session = sessionStorage.getItem("user_id")
 /* After Signing Up, Predictions Form appears */
   newUsers.addEventListener("click", () => {
     console.log("signing up?")
-    signUser()
+    // registerUser() Last night
+ signUser()
     appearForm()
     hideDiv.hideSignUpDiv()
     hideDiv.hideLoginDiv()
