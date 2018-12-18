@@ -24,3 +24,5 @@ The web server will be started, and the JavaScript code in the `src/scripts` dir
 
 ![sample boilerplate output](./browserify-boilerplate-output.png)
 
+# OscarPredictionsApp
+Frontend capstone
