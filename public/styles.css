@@ -1,11 +1,7 @@
 header {
   color: gold;
-  background-color: crimson;
   padding: 15px;
   border-radius: 2px;
-}
-
-#header {
   background: url(curtains.jpg);
 }
 
@@ -27,17 +23,51 @@ input {
   text-align: center;
 }
 
+input[type=text], input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  background-color: gold;
+  color: crimson;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: url(leo.png), pointer;
+}
+
+input[type=button]:hover {
+  opacity: .8;
+}
+
 body {
   background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom left;
 }
 
 .signUp {
+	max-width: 450px;
+	background: crimson;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+  border: 6px solid gold;
+  text-align: center;
+}
+
+#clockDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
+  padding: 10px 20px;
+  border: 1px solid gold;
 }
 
 .hide {
@@ -63,7 +93,7 @@ body {
 }
 
 body {
-  color: gold;
+  color:gold;
 }
 
 .predixDiv {
@@ -72,7 +102,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -180px;
 }
 
 /* Styling for input errors */
@@ -95,12 +124,25 @@ body {
   width: 50px;
 }
 
+h1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background: url(curtains.jpg);
-  color: gold;
   text-align: center;
+}
+
+#clockDiv {
+  color: gold;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }

@@ -132,12 +132,7 @@ function predixDiv(predix) {
         </div>
     <button id="editPick" class=${predix.id}>Edit</button><button id="donePick" class="donePick" predictionsId=${predix.id}>Done</button>
     <input type="button" id="delPredix" class="delPredix" value="Delete All">
-  </div>
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>`
+  </div>`
 return userPredix
 }
 

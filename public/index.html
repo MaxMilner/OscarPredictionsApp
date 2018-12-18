@@ -3,14 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Oscar Predictions App</title>
+    <title>Oscars Schmoscars</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://freevector.co/wp-content/uploads/2014/02/85651-oscar-academy-award.png"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body background = "https://i.pinimg.com/736x/40/33/49/4033498eabeb3b3b77d18167d180f8a5--ppt-oscars.jpg">
 
-  <header id="header">Oscar Predictions App
+  <header id="headerText">Oscar Schmoscar Predictions App
     <article class="login">
       <div id="loginBox" class="loginBox">
         <input type="text" id="login" placeholder="Username" required>
@@ -18,13 +19,12 @@
         <input type="button" id="loginButton" class="loginButton" value="Login">
       </div>
     </article>
+    <article id="signOut" class="signOut">
+        <div id="signOutBox" class="signOutBox">
+          <input type="button" id="signOutButton" class="signOutButton" value="Sign Out">
+        </div>
+       </article>
   </header>
-
-  <article id="signOut" class="signOut">
-    <div id="signOutBox" class="signOutBox">
-      <input type="button" id="signOutButton" class="signOutButton" value="Sign Out">
-    </div>
-   </article>
 
     <article class="signUp">
       <div id="signUpBox" class="signUpBox">
@@ -35,14 +35,16 @@
           <!-- <p class = "error"></p> -->
         <br></br>
         <input type="button" id="signUpButton" class="signUpButton" value="Sign Up">
+        <h1>The 91st Academy Awards Begin In...</h1>
+          <div id="clockDiv"></div>
+        </div>
       </div>
     </article>
 
   <div id="domEntry"></div>
 
 <div class="footer">
-  <h1>The 91st Academy Awards Begin In...</h1>
-    <div id="clockDiv"></div>
+</div>
 
 <script src="bundle.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
