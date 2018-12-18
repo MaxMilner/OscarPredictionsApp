@@ -5,7 +5,7 @@ function newLoginUser(user) {
   let validated = validatePassword(user);
   if (validated) {
     sessionStorage.setItem("user_id", user.id)
-    sessionStorage.setItem("email", user.email)
+    sessionStorage.setItem("username", user.username)
       alert("YO DOG CHILI CHEESE")
   } else {
       alert("wrong");

@@ -5,6 +5,7 @@ import appearForm from "./Components/Predix/appearForm"
 import predixDom from "./Components/Predix/displayPredix"
 import submitPredix from "./Components/Predix/submitPredix"
 import eventListening from "./Components/Predix/eventListeners"
+import countdownClock from "./Components/Clock/clock"
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
@@ -24,7 +25,6 @@ const session = sessionStorage.getItem("user_id")
 /* After Signing Up, Predictions Form appears */
   newUsers.addEventListener("click", () => {
     console.log("signing up?")
-    // registerUser() Last night
  signUser()
     appearForm()
     hideDiv.hideSignUpDiv()
@@ -47,4 +47,8 @@ const session = sessionStorage.getItem("user_id")
     predixDom()
     eventListening.editButton()
     eventListening.doneButton()
-  })
+
+})
+
+// Runs the countdown clock down at the footer
+countdownClock.countdown()

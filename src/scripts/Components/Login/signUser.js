@@ -5,9 +5,9 @@ import newLoginUser from "./newLogin"
 function signUser() {
   sessionStorage.clear()
   let user = {
-      email: document.querySelector("#email").value,
+      username: document.querySelector("#username").value,
       password: document.querySelector("#password").value
-   }
+  }
   userAPIfunctions.postUser(user)
     .then((response) => response.json())
     .then((user) => newLoginUser(user))

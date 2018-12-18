@@ -4,9 +4,9 @@ const userAPIfunctions = {
       .then(users => users.json())
       .then(parsedUsers => parsedUsers)
   },
-  getUser(email) {
-    console.log(email)
-      return fetch(`http://localhost:3000/users?email=${email}`)
+  getUser(username) {
+    console.log(username)
+      return fetch(`http://localhost:3000/users?username=${username}`)
       .then(user => user.json())
       .then(parsedUser => parsedUser[0])
   },

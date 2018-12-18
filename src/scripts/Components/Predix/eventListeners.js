@@ -45,4 +45,4 @@ const eventListening = {
   }
 }
 
-export default eventListening;
+export default eventListening

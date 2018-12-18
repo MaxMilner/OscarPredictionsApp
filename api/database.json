@@ -2,14 +2,8 @@
   "users": [
     {
       "username": "papabigsauce",
-      "email": "maxmilner31@yahoo.com",
       "password": "Masashi!",
       "id": 2
-    },
-    {
-      "email": "poop@butt.com",
-      "password": "mmm",
-      "id": 3
     }
   ],
   "predictions": [
@@ -41,35 +35,6 @@
       "editing": "First Man",
       "vfx": "Mary Poppins Returns",
       "id": 2
-    },
-    {
-      "user_id": 3,
-      "picture": "mmm",
-      "director": "",
-      "leadActor": "",
-      "leadActress": "",
-      "supActor": "",
-      "supActress": "",
-      "original": "",
-      "adapted": "",
-      "popular": "",
-      "animated": "",
-      "foreign": "",
-      "doc": "",
-      "docShort": "",
-      "liveShort": "",
-      "aniShort": "",
-      "score": "",
-      "song": "",
-      "soundEd": "",
-      "soundMix": "",
-      "production": "",
-      "cine": "",
-      "makeup": "",
-      "costume": "",
-      "editing": "",
-      "vfx": "",
-      "id": 3
     }
   ]
 }
