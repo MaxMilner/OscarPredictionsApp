@@ -12,7 +12,7 @@ let domEntry = document.getElementById("domEntry")
   }
 
   function assignDeleteListener() {
-    let deleting = document.getElementById("delPredix")
+    let deleting = document.querySelector(".delPredix")
       deleting.addEventListener("click", (e) => {
         console.log("deleting?")
          eventListening.deleteButton(e)

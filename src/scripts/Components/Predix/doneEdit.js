@@ -1,7 +1,7 @@
 import predixAPIfunctions from "./fetching"
 import predixDiv from "./displayPredix";
 
-function doneEditPredix(id) {
+function doneEditPredix(predixId) {
   let user_idValue = sessionStorage.getItem("user_id")
   let pictureValue = document.querySelector("#editPicture").value
   let directorValue = document.querySelector("#editDirector").value
@@ -57,7 +57,7 @@ function doneEditPredix(id) {
     editing: editingValue,
     vfx: vfxValue
   }
-predixAPIfunctions.putPredix(userNewPredix, id)
+predixAPIfunctions.putPredix(userNewPredix, predixId)
 .then(() =>
   predixDiv())
 }

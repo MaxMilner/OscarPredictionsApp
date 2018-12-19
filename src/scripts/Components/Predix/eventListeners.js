@@ -11,15 +11,16 @@ const eventListening = {
   },
 
   deleteButton(e) {
-    const predixId = e.target.parentNode.id;
+    console.log(e)
+    const predixId = e.target.id;
     console.log("parentid", predixId)
     deletePredix(predixId)
   },
 
   editButton() {
-    console.log("clicked editing?");
     document.addEventListener("click", e => {
       if (e.target.id === "editPick") {
+        console.log("editing?")
         let id = e.target.className
         let userId = sessionStorage.user_id
         let predixPicture = document.querySelector("#predixPicture")
@@ -27,7 +28,6 @@ const eventListening = {
           picture: predixPicture.value,
           user_id: userId
         }
-        console.log("editing?", obj)
       }
     })
   },

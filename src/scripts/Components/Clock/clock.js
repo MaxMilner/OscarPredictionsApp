@@ -1,7 +1,6 @@
 const countdownClock = {
 
 countdown() {
-  console.log("yo")
 // Gets the time of the Oscars
   const countDownDate = new Date("February 24, 2019 8:00:00").getTime()
 

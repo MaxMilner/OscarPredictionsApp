@@ -26,7 +26,7 @@ const predixAPIfunctions = {
 
   deletePredix(predixId) {
     console.log("deleting", predixId);
-    return fetch(`http://localhost:3000/predictions${predixId}`, {
+    return fetch(`http://localhost:3000/predictions/${predixId}`, {
       method: "DELETE"
     }).then(x => x.json())
   },

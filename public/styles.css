@@ -19,7 +19,7 @@ input {
   border-radius: 2px;
   margin: 0 0 10px 0;
   padding: 2px;
-  width: 180px;
+  width: 190px;
   text-align: center;
 }
 
@@ -51,7 +51,7 @@ body {
   background-position: bottom left;
 }
 
-.signUp {
+.signUpBox {
 	max-width: 450px;
 	background: crimson;
 	padding: 30px;
@@ -97,6 +97,7 @@ body {
 }
 
 .predixDiv {
+  margin-top: -450px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

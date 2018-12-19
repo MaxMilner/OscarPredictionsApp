@@ -6,6 +6,7 @@ import predixDom from "./Components/Predix/displayPredix"
 import submitPredix from "./Components/Predix/submitPredix"
 import eventListening from "./Components/Predix/eventListeners"
 import countdownClock from "./Components/Clock/clock"
+import posterAPIfunctions from "./Components/Posters/fetching"
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
@@ -39,16 +40,16 @@ const session = sessionStorage.getItem("user_id")
       hideDiv.hidePredixFormDiv()
     })
   })
-
+  eventListening.editButton()
+  eventListening.doneButton()
 /* Upon login the user can see their Predictions */
   existingUserButton.addEventListener("click", () => {
-    console.log("logging in?")
     loginUser()
     predixDom()
-    eventListening.editButton()
-    eventListening.doneButton()
-
+    console.log("logging in? test")
 })
+
+posterAPIfunctions.getMoviePoster()
 
 // Runs the countdown clock down at the footer
 countdownClock.countdown()

@@ -4,11 +4,16 @@
       "username": "papabigsauce",
       "password": "Masashi!",
       "id": 2
+    },
+    {
+      "username": "SidneyLumetSuxx",
+      "password": "babor2",
+      "id": 3
     }
   ],
   "predictions": [
     {
-      "user_id": 2,
+      "user_id": "2",
       "picture": "A Star Is Born",
       "director": "Barry Jenkins",
       "leadActor": "Bradley Cooper",
@@ -35,6 +40,35 @@
       "editing": "First Man",
       "vfx": "Mary Poppins Returns",
       "id": 2
+    },
+    {
+      "user_id": 3,
+      "picture": "Green Book",
+      "director": "Bradley Cooper",
+      "leadActor": "Christian Bale",
+      "leadActress": "Lady Gaga",
+      "supActor": "Sam Elliott",
+      "supActress": "Claire Foy",
+      "original": "Green Book",
+      "adapted": "If Beale Street Could Talk",
+      "popular": "Black Panther",
+      "animated": "Wreck-It Ralph 2",
+      "foreign": "Shoplifters",
+      "doc": "Free Solo",
+      "docShort": "idk",
+      "liveShort": "idk",
+      "aniShort": "idk",
+      "score": "Mary Poppins Returns",
+      "song": "Mary Poppins Returns",
+      "soundEd": "A Star Is Born",
+      "soundMix": "A Star Is Born",
+      "production": "Mary Queen Of Scots",
+      "cine": "If Beale Street Could Talk",
+      "makeup": "Mary Queen Of Scots",
+      "costume": "Mary Queen Of Scots",
+      "editing": "A Star Is Born",
+      "vfx": "First Man",
+      "id": 3
     }
   ]
 }
