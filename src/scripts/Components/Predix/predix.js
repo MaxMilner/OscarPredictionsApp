@@ -2,6 +2,8 @@ function predixDiv(predix) {
   console.log(predix)
   let userPredix =
   `<div id="predixDiv" class="predixDiv">
+      <button id="editPick" class=${predix.id} onclick="hideShowEdits()">Edit</button><button id="donePick" class="donePick" predictionsId=${predix.id}>Done</button>
+      <input type="button" id=${predix.id} class="delPredix" value="Delete All">
     <p>BEST PICTURE:</p>
       <p id="predixPicture" class="predixPicture">${predix.picture}</p>
         <div id=${predix.id} class="editDiv">
@@ -127,14 +129,10 @@ function predixDiv(predix) {
         <div id="editDiv" class="editDiv">
           <input type="text" id="editVfx" class=${predix.id} value="${predix.vfx}">
         </div>
-    <button id="editPick" class=${predix.id}>Edit</button><button id="donePick" class="donePick" predictionsId=${predix.id}>Done</button>
+    <button id="editPick" class=${predix.id} onclick="hideShowEdits()">Edit</button><button id="donePick" class="donePick" predictionsId=${predix.id}>Done</button>
     <input type="button" id=${predix.id} class="delPredix" value="Delete All">
   </div>`
 return userPredix
 }
 
 export default predixDiv
-
-       // <button id="editPick" class=${predix.id}>Edit</button>
-        // <button id="donePick" class="donePick" predictionsId=${predix.id}>Done</button>
-        // <input type="button" id=${predix.id} class="delPredix" value="Delete All">

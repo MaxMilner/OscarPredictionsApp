@@ -29,7 +29,17 @@ const hideDiv = {
       const signUp = document.getElementById("signUpBox")
         signUp.classList.toggle("hide")
         this.toggleSignOutDiv()
+  },
+
+  hideShowEdits() {
+    pickChange = document.getElementById("editDiv")
+      if (pickChange.display === "none") {
+        pickChange.style.display = "block"
+      } else {
+        pickChange.style.display = "none";
+      }
   }
+
 }
 
 export default hideDiv
